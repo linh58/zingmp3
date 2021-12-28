@@ -1,6 +1,5 @@
 .app {
     background-image: url(../img/theme/theme1.svg);
-    background-size: 1920px auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
@@ -192,7 +191,7 @@
     top: 0;
     width: calc(100% - var(--sidebar-pc-width));
     height: 100%;
-    padding-bottom: 110px;
+    padding-bottom: calc(var(--player-height) + 20px);
 }
 
 /* Header */
