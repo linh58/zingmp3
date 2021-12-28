@@ -10,6 +10,10 @@
     .sidebar__item.active {
         border: none;
     }
+    .singer__card {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
 }
 
 /* Tablet */
@@ -118,7 +122,6 @@
         margin-bottom: 0;
     }
 
-
 }
 /* Tablet pro*/
 @media (max-width: 1130px) and (min-width: 1024px) {
@@ -134,6 +137,10 @@
     }
     .content__navbar {
         width: 100%;
+    }
+    .singer__card {
+        flex-wrap: nowrap;
+        overflow: hidden;
     }
 
 }

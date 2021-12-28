@@ -191,7 +191,8 @@
     bottom: 0;
     top: 0;
     width: calc(100% - var(--sidebar-pc-width));
-    height: 190vh;
+    height: 100%;
+    padding-bottom: 110px;
 }
 
 /* Header */
@@ -581,14 +582,94 @@
 .content__singer {
     margin-top: 50px;
 }
+.singer__card-item {
+    text-align: center;
+}
 .singer__title {
      margin-bottom: 16px;
 }
-.singer__card-img {
+.singer__card-img img {
     border-radius: 50%;
     width: 100%;
+}
+.singer__card-image {
+    position: relative;
     cursor: pointer;
 }
+
+.singer__card-image:hover .singer__card-overlay {
+    display: flex;
+}
+
+.singer__card-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.singer__card-overlay i{
+    font-size: 3rem;
+}
+
+.card-overlay-icon {
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-overlay-icon:hover {
+    color: #E6E6E6;
+}
+
+.singer__card-name {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 15px 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.singer__card-name:hover {
+    color: #fe63da;
+    text-decoration: underline;
+}
+.singer__card-fan {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #FFFFFF80;
+}
+.singer__song-list {
+    justify-content: center;
+    align-items: center;
+}
+.singer__song-suffle {
+    background-color: #ffffff1a;
+    cursor: pointer;
+    padding: 5px 0;
+    border-radius: 20px;
+    border: 1px solid hsla(0,0%,100%,0.1);
+}
+.singer__song-list span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.singer__song-list i {
+    font-size: 1.2rem;
+}
+
 
 /* Player */
 .player__container {
