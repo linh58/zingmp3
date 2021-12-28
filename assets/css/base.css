@@ -1,0 +1,172 @@
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #ED2B91;
+    --sidebar-pc-width: 240px;
+    --sidebar-tablet-width: 70px;
+    --content-bg-color: #ffffff1a;
+    --sidebar-pc-height: calc(100% - var(--player-height));
+    --player-height: 90px;
+    --sidebar-mobile-height: 50px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6rem;
+    color: var(--white-color);
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;   
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    font-size: 1.2rem;
+    padding: 7px 19px;
+    border-radius: 20px;
+    color: var(--white-color);
+}
+
+.scrollbar {
+    mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+    mask-size: 765px 20000px;
+    mask-position: left bottom;
+    -webkit-mask-image: linear-gradient(to top, transparent, black), 
+    linear-gradient(to left, transparent 17px, black 17px);
+    -webkit-mask-size: 765px 20000px;
+    -webkit-mask-position: left bottom;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(88, 87, 87); 
+}
+
+.progress-bar {
+    background: var(--content-bg-color);
+    height: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar:hover {
+    height: 6px;
+}
+
+/* Input range */
+input[type=range] {
+    height: 3px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    width: 4px;
+    height: 3px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 2px black;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 3px;
+    border-radius: 0.5em;
+    background: #efefef;
+    border: none;
+    box-shadow: none;
+}
+
+input[type=range]:hover::-webkit-slider-runnable-track {
+    background: #e5e5e5;
+}
+
+input[type=range]:active::-webkit-slider-runnable-track {
+    background: #f5f5f5;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: linear-gradient(#fff,#fff) 0/var(--sx) 100% no-repeat, #efefef;
+}
+
+input[type=range]:hover::-webkit-slider-runnable-track {
+    background: linear-gradient(#fff,#fff) 0/var(--sx) 100% no-repeat, #e5e5e5;
+}
+
+input[type=range]:active::-webkit-slider-runnable-track {
+    background: linear-gradient(#fff,#fff) 0/var(--sx) 100% no-repeat, #f5f5f5;
+} 
+
+.progress-bar:hover input[type=range]::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    margin-top: calc(3px * 0.5 - 10px * 0.5);
+    border-radius: 1em;
+}
+
+.option-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
