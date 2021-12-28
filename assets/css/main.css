@@ -191,7 +191,7 @@
     bottom: 0;
     top: 0;
     width: calc(100% - var(--sidebar-pc-width));
-    height: 150vh;
+    height: 190vh;
 }
 
 /* Header */
@@ -407,18 +407,18 @@
     padding-bottom: 10px;
 }
 
-.song__title {
+.content__title {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
-.song__title span {
+.content__title span {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.song__title i {
+.content__title i {
     font-size: 1.9rem;
     margin-left: 5px;
 }
@@ -575,6 +575,19 @@
 
 .option__active {
     color: var(--primary-color);
+}
+
+/* Singer content */
+.content__singer {
+    margin-top: 50px;
+}
+.singer__title {
+     margin-bottom: 16px;
+}
+.singer__card-img {
+    border-radius: 50%;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* Player */
