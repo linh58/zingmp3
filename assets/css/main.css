@@ -78,6 +78,11 @@
     width: 34px;
 }
 
+.sidebar__library-item,
+.sidebar__library-title i {
+    cursor: pointer;
+}
+
 .sidebar__nav-list {
     margin-top: 0;
     margin-bottom: 10px;
@@ -88,7 +93,6 @@
     overflow: hidden overlay;
     overscroll-behavior: contain;
     will-change: scroll-position;
-    
 }
 
 .sidebar__navbar:hover {

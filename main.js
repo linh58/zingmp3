@@ -3,6 +3,7 @@ const $$ = document.querySelectorAll.bind(document)
 
 const contentNavItems = $$('.content__navbar-item')
 
+
 contentNavItems.forEach((contentNavItem) => {
     contentNavItem.onclick = () => {
         $('.content__navbar-item.content__navbar-active').classList.remove('content__navbar-active')
@@ -19,6 +20,9 @@ const libraryItems = $$('.sidebar__library-item')
 const sidebarLogos = $$('.sidebar__logo')
 const sidebarItems = $$('.sidebar__item')
 const libraryTitle = $('.sidebar__library-title h4')
+const main = $('.app')
+const navbar = $('.sidebar__navbar')
+
 
 
 expandButton.onclick = function() {
@@ -60,9 +64,7 @@ expandButton.onclick = function() {
         libraryTitle.style.display = 'none'
     }
 }
-
 const logout = $('.option__logout')
-const main = $('.app')
 const optionButton = $('.option__button')
 function openLogOut() {
     logout.classList.toggle('logout-active')
@@ -500,4 +502,3 @@ const app = {
 
 
 app.start()
-

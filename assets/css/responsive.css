@@ -18,6 +18,9 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .app {
+        height: 110%;
+    }
     .hide-on-tablet {
         display: none;
     }
@@ -142,12 +145,21 @@
         flex-wrap: nowrap;
         overflow: hidden;
     }
+    .sidebar__navbar {
+        height: unset;
+    }
+    .app__content {
+        padding-bottom: 0;
+    }
 
 }
 /* Mobile */
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
+    }
+    .app__content {
+        padding-bottom: 0;
     }
     .app__container {
         position: unset;
